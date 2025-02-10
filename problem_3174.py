@@ -4,13 +4,15 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        
+        n = len(s)
         ret = []
 
-        for c in s:
-            if c.isdigit():
+        i = 0
+        while i < n:
+            if s[i].isdigit():
                 ret.pop()
             else:
-                ret.append(c)
-        
+                ret.append(s[i])
+            i+=1
+
         return "".join(ret)
