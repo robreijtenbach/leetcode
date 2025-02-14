@@ -7,4 +7,3 @@ Found this hack when checking the fastest solution after submitting problem 5.
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
 ```
 It sets the runtime to 0 which you could use to impress your friends.
-
